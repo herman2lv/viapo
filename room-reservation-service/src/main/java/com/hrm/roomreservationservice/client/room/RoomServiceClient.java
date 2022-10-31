@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient("room-service")
+@FeignClient(name = "room-service", url = "https://room-service-dot-bsuir-viapo.uc.r.appspot.com")
 public interface RoomServiceClient {
 
     @GetMapping("/rooms")

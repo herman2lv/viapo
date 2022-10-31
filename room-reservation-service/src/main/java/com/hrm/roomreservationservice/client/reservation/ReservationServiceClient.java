@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient("reservation-service")
+@FeignClient(name = "reservation-service", url = "https://reservation-service-dot-bsuir-viapo.uc.r.appspot.com")
 public interface ReservationServiceClient {
 
     @GetMapping("/reservations")
